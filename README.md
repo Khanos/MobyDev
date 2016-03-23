@@ -25,7 +25,7 @@ Utilizando el siguiente [API](http://jsonplaceholder.typicode.com)
 	
 2. Instalar el IDE [Sublime Text](https://www.sublimetext.com/) o algun otro de su preferencia.
 
-	> **Nota:** Para esta instalación se utilizará Sublime Text, asi que instalalo deja la flojera.
+	> **Nota:** Para esta instalación y desarrollo se utilizará Sublime Text.
 
 3. Luego procedemos a la instalación y configuración del entorno de desarrollo.
 
