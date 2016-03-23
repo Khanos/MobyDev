@@ -1,0 +1,30 @@
+<div ng-controller="mainCtrl">
+        <app-header info="mainPage"></app-header>
+</div>
+<!-- Main Content -->
+<div class="container" ng-cloak>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" ng-controller="mainController as blog">
+            <h1>Test</h1>              
+            <div class="post-preview" ng-repeat="post in blog.posts | limitTo:blog.limitPost">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        {{ post.title }}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{ post.body }}
+                    </h3>                        
+                </a>
+                <p class="post-meta">
+                Posted by <a href="mailto:"+{{ blog.findUser(blog.users, post.userId).email }}+"?Subject=Hello%20again">{{ blog.findUser(blog.users, post.userId).name }} </a>, Website: {{ blog.findUser(blog.users, post.userId).website }} on September 24, 2014</p>
+            </div>
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="next">
+                    <a href="#/" ng-click="blog.limitPost = 100">See all &rarr;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
