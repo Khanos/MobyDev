@@ -83,7 +83,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-connect'); 
-
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'less', 'usebanner','connect', 'watch']);
 };
